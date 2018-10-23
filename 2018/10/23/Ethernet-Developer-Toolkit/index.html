@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Toolkit," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="以太坊开发者资源工具集开发语言、框架与工具语言: Solidity-官方推荐以太坊智能合约开发语言，也是目前最为主流的智能合约语言。  Bamboo  是一种将智能合约描述为有限状态机的语言，把智能合约看成一个状态和交易的函数，同时生成一个新的状态。  Vyper - 一种类 python 的面向合约编程语言，专注于以太坊虚拟机，着重于安全、简洁、和稳定性。  Lity是一种新的编程语言，用来在C">
+<meta name="keywords" content="Toolkit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ethernet Developer Toolkit">
+<meta property="og:url" content="http://yoursite.com/2018/10/23/Ethernet-Developer-Toolkit/index.html">
+<meta property="og:site_name" content="HomoRix">
+<meta property="og:description" content="以太坊开发者资源工具集开发语言、框架与工具语言: Solidity-官方推荐以太坊智能合约开发语言，也是目前最为主流的智能合约语言。  Bamboo  是一种将智能合约描述为有限状态机的语言，把智能合约看成一个状态和交易的函数，同时生成一个新的状态。  Vyper - 一种类 python 的面向合约编程语言，专注于以太坊虚拟机，着重于安全、简洁、和稳定性。  Lity是一种新的编程语言，用来在C">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-23T10:22:38.024Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ethernet Developer Toolkit">
+<meta name="twitter:description" content="以太坊开发者资源工具集开发语言、框架与工具语言: Solidity-官方推荐以太坊智能合约开发语言，也是目前最为主流的智能合约语言。  Bamboo  是一种将智能合约描述为有限状态机的语言，把智能合约看成一个状态和交易的函数，同时生成一个新的状态。  Vyper - 一种类 python 的面向合约编程语言，专注于以太坊虚拟机，着重于安全、简洁、和稳定性。  Lity是一种新的编程语言，用来在C">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/23/Ethernet-Developer-Toolkit/"/>
+
+
+
+
+
+  <title>Ethernet Developer Toolkit | HomoRix</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HomoRix</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/23/Ethernet-Developer-Toolkit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Turing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HomoRix">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Ethernet Developer Toolkit</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-23T18:20:16+08:00">
+                2018-10-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="以太坊开发者资源工具集"><a href="#以太坊开发者资源工具集" class="headerlink" title="以太坊开发者资源工具集"></a>以太坊开发者资源工具集</h3><h4 id="开发语言、框架与工具"><a href="#开发语言、框架与工具" class="headerlink" title="开发语言、框架与工具"></a>开发语言、框架与工具</h4><h4 id="语言"><a href="#语言" class="headerlink" title="语言:"></a>语言:</h4><ul>
+<li><p>Solidity-官方推荐以太坊智能合约开发语言，也是目前最为主流的智能合约语言。</p>
+</li>
+<li><p>Bamboo  是一种将智能合约描述为有限状态机的语言，把智能合约看成一个状态和交易的函数，同时生成一个新的状态。</p>
+</li>
+<li><p>Vyper - 一种类 python 的面向合约编程语言，专注于以太坊虚拟机，着重于安全、简洁、和稳定性。</p>
+</li>
+<li>Lity是一种新的编程语言，用来在CyberMiles区块链上开发智能合约。lity由动态可扩展语言、编译器和虚拟机运行时组成。 [1]<br>Lity给区块链应用赋予卓越性能，动态可扩展性，与安全性,同时完全向后兼容Solidity。</li>
+</ul>
+<h4 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h4><ul>
+<li>Truffle -最为流行的智能合约开发、测试和部署框架。经常与 Ganache (也是由 Truffle 团队开发) 一起搭配使用。</li>
+<li>Embark - 一个 DApp 开发框架。</li>
+<li>Populus -用Python语言写的智能合约开发框架。</li>
+<li>Etherlime - 基于 ethers.js 的 DApp 开发框架。</li>
+</ul>
+<h4 id="集成开发环境（IDE）"><a href="#集成开发环境（IDE）" class="headerlink" title="集成开发环境（IDE）"></a>集成开发环境（IDE）</h4><ul>
+<li>Remix - 一个基于solidity语言的在线智能合约开发IDE，它提供从编译，调试到部署的全流程支持。</li>
+<li>Atom - Atom 编辑器可以结合 Atom Solidity Linter, Etheratom 等插件进行智能合约开发。</li>
+<li>Pragma - 一个非常简单的 solidity 合约在线 IDE。提供合约的编译、部署与调用支持。</li>
+<li>Superblocks Studio - Superblocks Studio 可以帮助你在线编写、编译与部署智能合约。目前处于 beta 版本。</li>
+<li>Vim solidity - 有了这个，使用 vim 也可以写愉快地写 solidity 了。</li>
+<li>Visual Studio Code - VSCode 是我日常用的最多的工具，好多支持 solidity 的插件。</li>
+<li>Intellij Solidity Plugin - JetBrains IntelliJ Idea IDE 上用的 solidity 插件，支持语法高亮，格式化与代码自动补全。</li>
+</ul>
+<h4 id="常用以太坊交互代码库"><a href="#常用以太坊交互代码库" class="headerlink" title="常用以太坊交互代码库"></a>常用以太坊交互代码库</h4><ul>
+<li>Web3.js - 以太坊官方的 Javascript API</li>
+<li>Eth.js - 优化过的 Web3.js</li>
+<li>Ethers.js - 更加完整的以太坊 Javascript 代码库，包括 Web3.js 没有的足记词与 HD 钱包支持等。</li>
+<li>Web3.py - Python 版的 Web3</li>
+<li>Web3.php - PHP 版的 Web3</li>
+<li>Web3j - Java 版的 Web3</li>
+<li>Nethereum - .Net 版的 Web3</li>
+<li>Ethereum.rb - Ruby 版的 Web3</li>
+<li>Web3.hs - Haskell 版的 Web3</li>
+<li>KEthereum - Kotlin 版的 Web3</li>
+<li>Pyethereum - Python 版的以太坊核心客户端</li>
+<li>Drizzle - 基于 Redux 的用于链接以太坊的前端代码库</li>
+<li>Eventeum -以太坊智能合约事件和后端微服务之间的桥梁</li>
+<li>Vortex - 可直接用于 DApp 的 Redux Store。通过 WebSockets 实现智能合约与后台数据的自动刷新。</li>
+</ul>
+<h4 id="相关工具"><a href="#相关工具" class="headerlink" title="相关工具"></a>相关工具</h4><ul>
+<li>Truffle boxes - 一些打包好的组件</li>
+<li>Local Raiden - 在 docker 容器中运行本地雷电网络以进行演示和测试</li>
+<li>Private networks deployment scripts - 私有 PoA 网络的开箱即用部署脚本</li>
+<li>Local Ethereum Network - 私有 PoW 网络的开箱即用部署脚本</li>
+<li>Kaleido - 使用 Kaleido 启动联盟区块链网络。非常适合 PoC 和测试</li>
+<li>Cheshire - CryptoKitties API 和智能合约的本地沙箱实现</li>
+<li>Solc - Solidity 编译器</li>
+<li>Solidity cli - 更快更好的编译 Solidity</li>
+<li>Ethereumjs - 以太坊实用的 javascript 代码库集合，比如 ethereumjs-util 和 ethereumjs-tx 等</li>
+<li>Ethjs - 简单好用的 JS 模块</li>
+<li>Eth lightwallet - 在 Node 和浏览器里用的以太坊轻钱包</li>
+<li>RLP - RLP 编码的 JS 版实现</li>
+<li>Solium - 用于识别和修复 Solidity 中的代码格式和安全问题</li>
+<li>Ethereal-一个命令行工具，用于管理以太坊中的常见任务</li>
+<li>ABI decoder-用于解码以太坊交易中数据参数和事件的库</li>
+<li>Ethereum ABI UI - 根据以太坊合约 ABI 自动生成 UI 表单字段和关联的验证器</li>
+<li>Eth crypto-用于以太坊的加密javascript 函数以及将它们与 web3js 和 solidity 一起使用的教程</li>
+<li>Solidity flattener - 一个可以将工程中相互引用的合约合并到一个合约文件的工具</li>
+<li>JS IPFS API - JS 实现的与 IPFS API 交互的代码库</li>
+<li>Ganache - 具有 UI 的本地以太坊简单实现</li>
+<li>SpankCard - 浏览器里用的以太坊钱包</li>
+<li>Parity Signer - 允许签署交易的移动应用</li>
+<li>py-eth - 以太坊 Python 语言工具集</li>
+<li>Decode - 用以解析提交给本地 testrpc 节点的交易，使其更易读，更易于理解</li>
+</ul>
+<h4 id="基础架构相关"><a href="#基础架构相关" class="headerlink" title="基础架构相关"></a>基础架构相关</h4><h4 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h4><ul>
+<li>Geth - Go 语言实现版本</li>
+<li>Parity - Rust 语言实现版本</li>
+<li>Cpp-ethereum - C++ 语言实现版本</li>
+<li>Pyethapp - 基于 pyethereum 的 Python 语言实现版本</li>
+<li>Trinity - 基于 py-evm 的 Python 语言实现版本</li>
+<li>Ethereumjs - 基于 ethereumjs-vm 的 JS 实现版本</li>
+<li>Ethereumj - Java 语言实现版本</li>
+<li>Harmony - 基于 Ethereumj 的以太坊节点实现，EtherCamp出品</li>
+<li>Seth - 命令行版的 MetaMask</li>
+<li>Mustekala-以太坊轻客户端实现，MetaMask 团队出品</li>
+<li>Exthereum - Elixir 语言实现版本</li>
+<li>EWF Parity - 兼容以太坊的能源区块链客户端</li>
+<li>Quorum - 基于以太坊改造的关注数据隐私的授权访问区块链， JP Morgan 出品</li>
+</ul>
+<h4 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h4><ul>
+<li>Swarm - 去中心化存储平台和内容分发服务，是以太坊 web3 技术栈的基础层服务</li>
+<li>IPFS - 去中心化存储网络，致力于使网络更快，更安全，更开放的点对点超媒体协议</li>
+<li>IPFS-Store - 带检索功能的 IPFS 服务 API</li>
+<li>OrbitDB - 基于 IPFS 的去中心化数据库</li>
+</ul>
+<h4 id="消息"><a href="#消息" class="headerlink" title="消息"></a>消息</h4><ul>
+<li>Whisper - DApps 相互通信的通信协议, 以太坊 web3 技术栈的基础层服务</li>
+<li>DEVp2p Wire Protocol - 以太坊节点间的点对点通信</li>
+</ul>
+<h4 id="钱包"><a href="#钱包" class="headerlink" title="钱包"></a>钱包</h4><ul>
+<li>Metamask - 广为实用的浏览器插件钱包</li>
+<li>Gnosis multisig wallet - 多重签名钱包</li>
+<li>Mist - 官方钱包</li>
+<li>MyEtherWallet - 安全方便地与区块链交互的工具</li>
+<li>Ether Address Lookup - 以太坊地址检测 Chrome 浏览器插件</li>
+<li>MyCrypto - 和 MyEtherWallet 类似的钱包工具</li>
+<li>Portis - 方便用户使用 DApp 的 web 端钱包</li>
+<li>Toshi - 移动端 DApp 浏览器</li>
+<li>Trust - 移动端以太坊钱包</li>
+<li>Status - 基于 react 实现的移动端以太坊操作系统</li>
+<li>imToken - 广为使用的闭源钱包</li>
+<li>WallETH - 开源的 Android 以太坊钱包</li>
+<li>Trezor - 知名度很高的硬件钱包</li>
+<li>Ledger - 支持多币种的硬件钱包</li>
+<li>KeepKey - 另一款硬件钱包</li>
+</ul>
+<h4 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h4><ul>
+<li>Etherscan - 最为流行的以太坊浏览器，用于查看交易信息和合约代码</li>
+<li>Etherchain Light - 用于以太坊私链的区块链浏览器</li>
+<li>POA Explorer - 支持 POA 共识的以太坊浏览器</li>
+<li>QuickBlocks - 访问以太坊区块链数据的工具集</li>
+</ul>
+<h4 id="gas-计算"><a href="#gas-计算" class="headerlink" title="gas 计算"></a>gas 计算</h4><ul>
+<li>EthGasStation - 估计交易费用和时间的网站</li>
+<li>Petrometer - 计算特定账户每天所花费的 gas</li>
+<li>CryptoProf - 智能合约 gas 消耗测量工具相关服务</li>
+<li>Oracalize - 预言机服务</li>
+<li>Infura - 以太坊节点服务</li>
+<li>Regis - 基于以太坊的数字资产登记平台</li>
+<li>uPort - 身份认证</li>
+<li>Netstats - 以太坊网络统计</li>
+<li>ENS - 以太坊域名系统</li>
+<li>Name Bazaar - 以太坊域名市场</li>
+<li>Quantstamp - 安全审计</li>
+<li>SmartCheck - solidity 源码静态分析</li>
+<li>MD4 Online Hash Function - hash 算法在线工具</li>
+</ul>
+<h4 id="测试网络水龙头（faucet）"><a href="#测试网络水龙头（faucet）" class="headerlink" title="测试网络水龙头（faucet）"></a>测试网络水龙头（faucet）</h4><ul>
+<li>Rinkeby faucet</li>
+<li>Kovan faucet</li>
+<li>Ropsten faucet</li>
+</ul>
+<h4 id="合约代码库"><a href="#合约代码库" class="headerlink" title="合约代码库"></a>合约代码库</h4><ul>
+<li>Zeppelin - 经过测试的可重用合约库比如 SafeMath、 ZeppelinOS 等</li>
+<li>Modular Libraries - 另一个合约库</li>
+<li>DateTime Library - 省 gas 的solidity 时间处理库</li>
+<li>Aragon - DAO 协议</li>
+<li>0x - DEX 协议</li>
+</ul>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><ul>
+<li>Solidity code coverage - solidity 单元测试覆盖率</li>
+<li>Solidity coverage - 另一个 solidity 代码覆盖率工具</li>
+<li>Solidity function profiler - 列出合约函数</li>
+<li>Espresso - solidity 测试框架</li>
+<li>Eth tester - 以太坊应用测试套件</li>
+<li>Cliquebait - 简化验收测试的工具</li>
+<li>Hevm - 专为合约测试的 EVM 实现</li>
+<li>Ethereum graph debugger - solidity 调试图形化工具</li>
+</ul>
+<h4 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h4><ul>
+<li>Mythril - 智能合约静态安全分析</li>
+<li>Oyente - 智能合约静态安全分析</li>
+<li>Porosity-智能合约反编译与静态安全分析</li>
+<li>Ethersplay - EVM 反汇编</li>
+<li>Evmdis - EVM 反汇编</li>
+<li>Hydra - 去中心化的合约安全分析框架</li>
+<li>Solgraph - 图形化智能合约处理流程</li>
+<li>Manticore - 合约分析工具</li>
+<li>Solidity security blog - 合约安全分析博客</li>
+<li>Awesome Buggy ERC20 Tokens - 问题合约汇集</li>
+<li>智能合约最佳实践 - by ConsenSys</li>
+<li>Safety wiki - 以太坊安全</li>
+</ul>
+<h4 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h4><ul>
+<li>CryptoZombies - 以太坊僵尸教程<br>Solidity idiosyncrasies - solidity 陷阱，局限性和特质<br>Ethereum development with Go - 用 go 语言进行以太坊开发<br>Chainshot building blocks - 免费课程<br>Delegate call - token 激励的问答社区<br>Stackexchange - 问答社区<br>r/EthDev - Subreddit<br>Ethernaut - 游戏中掌握智能合约安全</li>
+</ul>
+<h4 id="治理"><a href="#治理" class="headerlink" title="治理"></a>治理</h4><ul>
+<li>Ethresear.ch-参与以太坊研究工作的论坛, 包括但不限于: Casper, Sharding, EVM improvements, Crytpeconomics, Plasma and State-channels</li>
+<li>Fellowship of Ethereum Magicians - 以太坊社区论坛</li>
+<li>EIPs - 以太坊改进提案库</li>
+<li>ERCs - The Ethereum Request for Comment repository</li>
+</ul>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><ul>
+<li>Wiki - 以太坊知识库</li>
+<li>Yellow Paper - 以太坊黄皮书</li>
+<li>Beige Paper - 不带那些特殊符号的以太坊黄皮书</li>
+<li>精通以太坊 - by Andreas M. Antonopoulos, Gavin Wood</li>
+<li>EVM opcodes - 以太坊指令集</li>
+<li>EVM illustrated - 以太坊虚拟机的解释文档</li>
+<li>4bytes - 合约 4 字节方法签名库</li>
+</ul>
+<h3 id="CyberMiles技术社区支持"><a href="#CyberMiles技术社区支持" class="headerlink" title="CyberMiles技术社区支持"></a>CyberMiles技术社区支持</h3><p>有任何问题可以加QQ解决：</p>
+<ul>
+<li><p>QQ群1：832462204   QQ群2：875719854</p>
+</li>
+<li><p>CM官方文档：<a href="https://travis.readthedocs.io/en/latest/getting-started.html" target="_blank" rel="noopener">https://travis.readthedocs.io/en/latest/getting-started.html</a></p>
+</li>
+<li><p>Lity：<a href="https://www.litylang.org/gas/" target="_blank" rel="noopener">https://www.litylang.org/gas/</a></p>
+</li>
+<li><p>lity入门： <a href="https://lity.readthedocs.io" target="_blank" rel="noopener">https://lity.readthedocs.io</a></p>
+</li>
+<li><p>libENI: <a href="https://libeni.readthedocs.io/en/latest/" target="_blank" rel="noopener">https://libeni.readthedocs.io/en/latest/</a></p>
+</li>
+<li><p>Github：<a href="https://github.com/CyberMiles/lity" target="_blank" rel="noopener">https://github.com/CyberMiles/lity</a></p>
+</li>
+<li><p>WEB3-CMT.JS: <a href="https://cybermiles.github.io/web3-cmt.js/api/" target="_blank" rel="noopener">https://cybermiles.github.io/web3-cmt.js/api/</a></p>
+</li>
+<li><p>lity开发入门指南（有视频）：<a href="https://dwz.cn/qDs8XQOt" target="_blank" rel="noopener">https://dwz.cn/qDs8XQOt</a></p>
+</li>
+<li><p>如何利用Lity创新（有视频）：<a href="https://dwz.cn/B63y9P1R" target="_blank" rel="noopener">https://dwz.cn/B63y9P1R</a></p>
+</li>
+<li><p>Lity如何防止合约错误：<a href="https://dwz.cn/4jMiQz5q" target="_blank" rel="noopener">https://dwz.cn/4jMiQz5q</a></p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Toolkit/" rel="tag"># Toolkit</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/16/手把手教你使用Lity编写和运行智能合约/" rel="next" title="手把手教你使用Lity编写和运行智能合约">
+                <i class="fa fa-chevron-left"></i> 手把手教你使用Lity编写和运行智能合约
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Turing</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#以太坊开发者资源工具集"><span class="nav-number">1.</span> <span class="nav-text">以太坊开发者资源工具集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开发语言、框架与工具"><span class="nav-number">1.1.</span> <span class="nav-text">开发语言、框架与工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#语言"><span class="nav-number">1.2.</span> <span class="nav-text">语言:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#框架"><span class="nav-number">1.3.</span> <span class="nav-text">框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#集成开发环境（IDE）"><span class="nav-number">1.4.</span> <span class="nav-text">集成开发环境（IDE）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用以太坊交互代码库"><span class="nav-number">1.5.</span> <span class="nav-text">常用以太坊交互代码库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关工具"><span class="nav-number">1.6.</span> <span class="nav-text">相关工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础架构相关"><span class="nav-number">1.7.</span> <span class="nav-text">基础架构相关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端"><span class="nav-number">1.8.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#存储"><span class="nav-number">1.9.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消息"><span class="nav-number">1.10.</span> <span class="nav-text">消息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#钱包"><span class="nav-number">1.11.</span> <span class="nav-text">钱包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器"><span class="nav-number">1.12.</span> <span class="nav-text">浏览器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gas-计算"><span class="nav-number">1.13.</span> <span class="nav-text">gas 计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试网络水龙头（faucet）"><span class="nav-number">1.14.</span> <span class="nav-text">测试网络水龙头（faucet）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合约代码库"><span class="nav-number">1.15.</span> <span class="nav-text">合约代码库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">1.16.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安全"><span class="nav-number">1.17.</span> <span class="nav-text">安全</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#知识"><span class="nav-number">1.18.</span> <span class="nav-text">知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#治理"><span class="nav-number">1.19.</span> <span class="nav-text">治理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考资料"><span class="nav-number">1.20.</span> <span class="nav-text">参考资料</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CyberMiles技术社区支持"><span class="nav-number">2.</span> <span class="nav-text">CyberMiles技术社区支持</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Turing</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

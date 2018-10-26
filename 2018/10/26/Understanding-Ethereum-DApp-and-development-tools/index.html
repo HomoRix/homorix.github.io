@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="理解以太坊工具以太坊有很多工具，随着时间的推移有些会过时，但早期的网络文章会有介绍，从而与目前的工具造成时差上的迷惑，有些工具是随着工程化的需要逐渐流行起来的。有必要梳理一下：  1、go-ethereum：以太坊Go语言版本的源码（也叫Client，注意区块链网络里没有服务端）。   2、Geth：go-ethereum的命令行终端，能调用go-ethereum的API。可以通过多种方式获得，比">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/15/hello-world/index.html">
+<meta property="og:title" content="Understanding Ethereum DApp and development tools">
+<meta property="og:url" content="http://yoursite.com/2018/10/26/Understanding-Ethereum-DApp-and-development-tools/index.html">
 <meta property="og:site_name" content="HomoRix">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="理解以太坊工具以太坊有很多工具，随着时间的推移有些会过时，但早期的网络文章会有介绍，从而与目前的工具造成时差上的迷惑，有些工具是随着工程化的需要逐渐流行起来的。有必要梳理一下：  1、go-ethereum：以太坊Go语言版本的源码（也叫Client，注意区块链网络里没有服务端）。   2、Geth：go-ethereum的命令行终端，能调用go-ethereum的API。可以通过多种方式获得，比">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-15T03:29:34.170Z">
+<meta property="og:updated_time" content="2018-10-26T03:17:25.219Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Understanding Ethereum DApp and development tools">
+<meta name="twitter:description" content="理解以太坊工具以太坊有很多工具，随着时间的推移有些会过时，但早期的网络文章会有介绍，从而与目前的工具造成时差上的迷惑，有些工具是随着工程化的需要逐渐流行起来的。有必要梳理一下：  1、go-ethereum：以太坊Go语言版本的源码（也叫Client，注意区块链网络里没有服务端）。   2、Geth：go-ethereum的命令行终端，能调用go-ethereum的API。可以通过多种方式获得，比">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/15/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/26/Understanding-Ethereum-DApp-and-development-tools/"/>
 
 
 
 
 
-  <title>Hello World | HomoRix</title>
+  <title>Understanding Ethereum DApp and development tools | HomoRix</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/15/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/Understanding-Ethereum-DApp-and-development-tools/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Turing">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Understanding Ethereum DApp and development tools</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-15T11:29:34+08:00">
-                2018-10-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-26T11:15:37+08:00">
+                2018-10-26
               </time>
             
 
@@ -299,15 +299,67 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="理解以太坊工具"><a href="#理解以太坊工具" class="headerlink" title="理解以太坊工具"></a>理解以太坊工具</h3><p>以太坊有很多工具，随着时间的推移有些会过时，但早期的网络文章会有介绍，从而与目前的工具造成时差上的迷惑，有些工具是随着工程化的需要逐渐流行起来的。有必要梳理一下：</p>
+<blockquote>
+<p>1、go-ethereum：以太坊Go语言版本的源码（也叫Client，注意区块链网络里没有服务端）。</p>
+</blockquote>
+<blockquote>
+<p>2、Geth：go-ethereum的命令行终端，能调用go-ethereum的API。可以通过多种方式获得，比如用homebrew安装、下载可执行二进制文件、通过go install/make geth go-ethereum源码等方式得到geth。</p>
+</blockquote>
+<blockquote>
+<p>3、Ethereum Wallet：可视化的Geth（以太坊钱包），可以管理账户、发布合约。</p>
+</blockquote>
+<blockquote>
+<p>4、Mist：以太坊浏览器，因为它连接的是以太坊区块链网络，可以通过mist访问DApp，当然也能访问管理Ethereum Wallet。</p>
+</blockquote>
+<blockquote>
+<p>5、Solidity：开发智能合约的编程语言，运行在EVM。</p>
+</blockquote>
+<blockquote>
+<p>6、Remix：开发智能合约的IDE，基于浏览器。适合新手(版本控制、存储等不便)。(Mix停止更新，browser-solidity也停止更新，都使用Remix了)</p>
+</blockquote>
+<blockquote>
+<p>7、Truffle和Embark是开发DApps的两个常用框架，可以写代码-编译-部署-测试-打包DApp（注意不仅仅可以开发智能合约）。</p>
+</blockquote>
+<blockquote>
+<p>8、web3：以太坊基金会为DApp开发的标准RPC访问接口，也就是以太坊区块链网络与链外网络的连接桥梁。</p>
+</blockquote>
+<h4 id="二、DAPP的工具、开发与原理"><a href="#二、DAPP的工具、开发与原理" class="headerlink" title="二、DAPP的工具、开发与原理"></a>二、DAPP的工具、开发与原理</h4><p>通过一个Dapp开发例子来理解。</p>
+<p>1、安装truffle（音:车否）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g truffle</span><br></pre></td></tr></table></figure>
+<p>2、安装Ganache（音:搁那师），Ganache是用于以太坊开发的仅为个人使用的区块链，下载可视化安装包。<br><a href="http://truffleframework.com/ganache/" target="_blank" rel="noopener">http://truffleframework.com/ganache/</a></p>
+<p>3、新建Dapp项目。首先新建一个空目录如dapp，然后进入空目录。</p>
+<p>通常可以用truffle初始化工程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truffle init</span><br></pre></td></tr></table></figure>
+<p>也可以从truffle在线应用里拆箱即用一个模板如webpack：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truffle unbox webpack</span><br></pre></td></tr></table></figure>
+<p>我们用第二种方式进行下文演示。</p>
+<p>4、我使用的IDE是GoLand（intellij idea系列的IDE都可以），安装插件Intellij-Solidity。打开工程后就可以友好地编写智能合约和DApp了。</p>
+<p>dapp目录下的几个文件说明：</p>
+<p>truffle.js：默认配置了一个网络，这个网络启动ganache后就自动启用了(每次启动都是全新的初始网络，之前的应用数据会丢失)，智能合约就是被部署到这个网络里的。</p>
+<p>migrations目录：这里面是合约的部署脚本，注意命名以数字加下划线开头，合约部署时按这个数字序号顺序执行。</p>
+<p>5、编译工程</p>
+<p>终端cd到dapp目录下执行编译命令<br>我们用第二种方式进行下文演示。</p>
+<p>4、我使用的IDE是GoLand（intellij idea系列的IDE都可以），安装插件Intellij-Solidity。打开工程后就可以友好地编写智能合约和DApp了。</p>
+<p>dapp目录下的几个文件说明：</p>
+<p>truffle.js：默认配置了一个网络，这个网络启动ganache后就自动启用了(每次启动都是全新的初始网络，之前的应用数据会丢失)，智能合约就是被部署到这个网络里的。</p>
+<p>migrations目录：这里面是合约的部署脚本，注意命名以数字加下划线开头，合约部署时按这个数字序号顺序执行。</p>
+<p>5、编译工程</p>
+<p>终端cd到dapp目录下执行编译命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truffle compile</span><br></pre></td></tr></table></figure>
+<p>会看到dapp下多了一个build目录，存放编译后的文件。这些文件都是json格式，可以在应用代码文件中通过import或require引用这些编译后的合约文件。</p>
+<p>6、部署合约到区块链网络</p>
+<p>在终端里执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truffle migrate</span><br></pre></td></tr></table></figure>
+<p>执行结束并成功后可以从ganache界面中看到产生了几个区块和几笔交易，这些交易是从默认的第一个外部拥有账户到合约账户（这两个账户的概念参见以太坊黄皮书说明，此处不大篇赘述）。</p>
+<p>7、打包应用程序并访问</p>
+<p>在终端里执行（应用程序根目录下）</p>
+<p>1）webpack编译打包应用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>【DApp原理】这个打包的结果就是单页前端应用SPA (Single-Page App)。你可以将它放在自己的云web服务器上，服务器上同时要部署一个以太节点，应用通过节点接入区块链网络。DApp一般都部署在链外，合约是发布到链上的。因特网的用户访问App界面操作功能，这些功能是合约暴露的web3接口。DApp之所以是去中心化的，就在于其核心——合约，分布于链上所有节点。</p>
+<p>2）本地启用app</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://localhost:8080,就可以看到dapp的界面，包含可视化的合约功能。" target="_blank" rel="noopener">http://localhost:8080,就可以看到dapp的界面，包含可视化的合约功能。</a></p>
 
       
     </div>
@@ -332,15 +384,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/23/Ethernet-Developer-Toolkit/" rel="next" title="Ethernet Developer Toolkit">
+                <i class="fa fa-chevron-left"></i> Ethernet Developer Toolkit
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/15/Create-a-new-post/" rel="prev" title="Create a new post">
-                Create a new post <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -463,7 +515,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解以太坊工具"><span class="nav-number">1.</span> <span class="nav-text">理解以太坊工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#二、DAPP的工具、开发与原理"><span class="nav-number">1.1.</span> <span class="nav-text">二、DAPP的工具、开发与原理</span></a></li></ol></li></ol></div>
             
 
           </div>

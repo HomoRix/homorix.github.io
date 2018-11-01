@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="HomoRix">
 <meta property="og:description" content="Lity是什么？Lity是一种用于建立区块链智能合约的新编程语言。它由CyberMiles区块链上的动态可扩展语言，编译器和虚拟机组成。它是Solidity语言的超集，具有更高的可扩展性，性能更好和更安全。尤其是： • LibENI动态VM扩展允许将本机功能即时添加到虚拟机，而无需停止、分叉或升级区块链。 • Lity语言的内置功能计划允许智能合约安排未来某一时间自动执行的计时器任务（schedu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-01T07:23:19.111Z">
+<meta property="og:updated_time" content="2018-11-01T08:08:04.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Developer Documentation_CN">
 <meta name="twitter:description" content="Lity是什么？Lity是一种用于建立区块链智能合约的新编程语言。它由CyberMiles区块链上的动态可扩展语言，编译器和虚拟机组成。它是Solidity语言的超集，具有更高的可扩展性，性能更好和更安全。尤其是： • LibENI动态VM扩展允许将本机功能即时添加到虚拟机，而无需停止、分叉或升级区块链。 • Lity语言的内置功能计划允许智能合约安排未来某一时间自动执行的计时器任务（schedu">
@@ -303,21 +303,21 @@
         <h3 id="Lity是什么？"><a href="#Lity是什么？" class="headerlink" title="Lity是什么？"></a>Lity是什么？</h3><p>Lity是一种用于建立区块链智能合约的新编程语言。它由CyberMiles区块链上的动态可扩展语言，编译器和虚拟机组成。它是Solidity语言的超集，具有更高的可扩展性，性能更好和更安全。尤其是：</p>
 <p>• LibENI动态VM扩展允许将本机功能即时添加到虚拟机，而无需停止、分叉或升级区块链。</p>
 <p>• Lity语言的内置功能计划允许智能合约安排未来某一时间自动执行的计时器任务（schedule timertasks），这是许多现实商业合约所要求的，例如信托，遗嘱，分期付款，保险，股票期权和投资回报。</p>
-<p>• Lity语言的内置功能==isValidator==允许智能合约检查交易发起人是否是CyberMiles区块链的当前验证人。通过==ValidatorOnly==修饰符，我们可以创建“可信”智能合约（“trusted” smart contracts），只能由CyberMiles区块链上的验证人更新。这种可信赖的智能合约的一个常见使用场景是让它们充当提供链下和跨链状态的预言机。</p>
+<p>• Lity语言的内置功能 isValidator 允许智能合约检查交易发起人是否是CyberMiles区块链的当前验证人。通过ValidatorOnly修饰符，我们可以创建“可信”智能合约（“trusted” smart contracts），只能由CyberMiles区块链上的验证人更新。这种可信赖的智能合约的一个常见使用场景是让它们充当提供链下和跨链状态的预言机。</p>
 <p>• 即将推出的Lity Rules Engine允许将正式的业务规则嵌入到智能合约中。这可以大大提高开发人员的工作效率并减少错误。</p>
-<p>• Lity 语言可防止整数溢出错误。它引入新的数字类型称为==safeuint==。它是一个无符号整数 ==(uint==) 但是所有==safeuint==操作都自动包装在SafetMath函数中。此外，CyberMiles虚拟机（CVM）在运行时检测并停止整数溢出。使用==safeuint==和CVM消除了大量的智能合约错误，这些损失曾引发大量的资金损失.  </p>
+<p>• Lity 语言可防止整数溢出错误。它引入新的数字类型称为safeuint。它是一个无符号整数 (uint) 但是所有safeuint操作都自动包装在SafetMath函数中。此外，CyberMiles虚拟机（CVM）在运行时检测并停止整数溢出。使用safeuint和CVM消除了大量的智能合约错误，这些损失曾引发大量的资金损失.  </p>
 <p>• Lity语言支持固定点实数（fixed point real numbers），而不是Solidity中的仅整数算术。</p>
 <p>• Lity 智能合约支持设定gas费（support alternative gas prices）。例如，系统可以为某些类型的合约提供gas折扣，以促进区块链上的某些使用场景。</p>
 <p>• Lity编译器提供部署Lity智能合约之前用于安全和错误检查的工具。 Lity编译器中的ERC检查器（ERC checker）分析源代码并自动检查合约是否符合已知的ERC标准。编译器还与Oyente静态分析器（Oyente static analyzer）集成，以检测编译的字节码中的常见错误模式。</p>
 <p>很感兴趣?<a href="https://www.litylang.org/getting_started/" target="_blank" rel="noopener">从这里开始吧!</a></p>
 <p> Lity这个名字是向Solidity致敬，并且致力于更灵活/可扩展（流动性）和更高性能（可燃性）。Lity由CyberMiles 基金会和Skymizer合作开发，并由GPL作为免费软件发布。保留所有权利。</p>
 <h3 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h3><p>首先，您需要下载并安装Lity编译器。 然后，编写并编译Lity智能合约。 接下来，您可以启动CyberMiles节点并在区块链上执行智能合约。</p>
-<h5 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h5><p>安装 Lity, 从<a href="https://lity.readthedocs.io/en/latest/download.html" target="_blank" rel="noopener">GitHub</a>上的源代码开始.<br>或者, 可以下载Lity发布的二进制码并将可执行文件lityc提取到本地目录~/==lityc==/。</p>
+<h5 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h5><p>安装 Lity, 从<a href="https://lity.readthedocs.io/en/latest/download.html" target="_blank" rel="noopener">GitHub</a>上的源代码开始.<br>或者, 可以下载Lity发布的二进制码并将可执行文件lityc提取到本地目录~/lityc/。</p>
 <p>Reverse Hello World</p>
 <p>The code below shows a simple Lity contract with a libENI call. The single libENI call costs hundreds of millions Ethereum gas to run when implemented in Solidity – it showcases the capability of Lity and libENI. While all Solidity smart contracts work on Lity, this example uses Lity-specific features and will not run on Solidity / Ethereum. First, create the text file Reverse.lity with the following content. It uses a libENI extension function reverse, which is not available in standard Solidity. </p>
 <p>下面的代码显示了一个带有libENI调用的简单Lity合约。 当在Solidity中实现时，单个libENI调用会花费数亿个以太坊gas才能运行 - 它展示了Lity和libENI的功能。 虽然所有Solidity智能合约都适用于Lity，但此示例使用Lity特定功能，无法在Solidity / Ethereum上运行。 首先，使用以下内容创建文本文件Reverse.lity。 它使用libENI扩展函数reverse，这在标准Solidity中不可用。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.23;</span><br><span class="line">  </span><br><span class="line">contract ReverseContract &#123;</span><br><span class="line">  function reverse(string input) public returns(string) &#123;</span><br><span class="line">    string memory output = eni(&quot;reverse&quot;, input);</span><br><span class="line">    return output;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Next, let’s use ==lityc== to compile the source into byte code. 接下来，让我们使用lityc将源代码编译为字节代码。</p>
+<p>Next, let’s use lityc to compile the source into byte code. 接下来，让我们使用lityc将源代码编译为字节代码。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ./lityc/lityc --bin Reverse.lity</span><br><span class="line">======= ./Reverse.lity:ReverseContract =======</span><br><span class="line">Binary:</span><br><span class="line">608060405234...</span><br></pre></td></tr></table></figure>
 <p>Then, we also use ==lityc== to generate the interface definition required by the virtual machine to register the contract. 然后，我们还使用lityc生成虚拟机登记合约所需的接口定义。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ./lityc/lityc --abi Reverse.lity</span><br><span class="line">======= ./Reverse.lity:ReverseContract =======</span><br><span class="line">Contract JSON ABI</span><br><span class="line">[&#123;&quot;constant&quot;:false,&quot;inputs&quot;:[&#123;&quot;name&quot;:&quot;input&quot;,&quot;type&quot;:&quot;string&quot;&#125;],&quot;name&quot;:&quot;reverse&quot;,&quot;outputs&quot;:[&#123;&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;string&quot;&#125;],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;function&quot;&#125;]</span><br></pre></td></tr></table></figure>
